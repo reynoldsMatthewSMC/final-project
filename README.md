@@ -14,6 +14,7 @@ I wanted to focus on the JS application functionality rather than the underlying
 My goal is to give users an interface to reconstruct the <a href="https://semantic-ui.com/examples/homepage.html" target="_blank">Starter page template "Homepage"</a> from <a href="https://semantic-ui.com/usage/layout.html" target="_blank">Semantic UI Layouts</a> and edit it with their content and allow users to preview and export the generated HTML.
 
 I created a demo screen capture of using the Webpage Builder App to recreate and edit the page to demonstrate the app features.
+<a href="https://drive.google.com/file/d/1qVKrT7s0SQi0lkbJqPubazLbcQC-B5j9/view?usp=drive_link" target="_blank">Demo Video</a>
 
 ## Third-Party Frameworks, Tools, and Generators
 - Semantic UI CSS Framework

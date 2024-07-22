@@ -163,7 +163,7 @@ class HomeView extends BaseView {
 							<p>My goal is to give users an interface to reconstruct the <a href="https://semantic-ui.com/examples/homepage.html" target="_blank">Starter page template "Homepage"</a> from <a href="https://semantic-ui.com/usage/layout.html" target="_blank">Semantic UI Layouts</a> and edit it with their content and allow users to preview and export the generated HTML.</p>
 
 							<p>I created a demo screen capture of using the Webpage Builder App to recreate and edit the page to demonstrate the app features.</p>
-							<a class="ui green labeled icon button" href="/index.html#editor">
+							<a class="ui green labeled icon button" href="https://drive.google.com/file/d/1qVKrT7s0SQi0lkbJqPubazLbcQC-B5j9/view?usp=drive_link" target="_blank">
 								<i class="video icon"></i>
 								Watch the Demo
 							</a>
