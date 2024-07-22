@@ -1,0 +1,124 @@
+//App top level styles
+
+@import './sections/masthead.scss';
+
+:root > body {
+  >.app-view-container {
+    display: flex;
+    flex-direction: row;
+    >.app-sidebar-menu-container {
+      position: fixed;
+      flex: 0 0 auto;      
+      width: 250px;
+      min-height: 100vh;
+      background-color: #1b1c1d;
+      z-index: 1;
+      >.app-sidebar-menu {
+        border-radius: 0;
+        border-width: 0 1px 0 0;
+        box-shadow: none;
+        margin: 0;
+        width: inherit;
+        max-height: 100vh;
+        overflow: auto;
+        >.item {
+          &.active {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+    >#app {
+      flex: 1 1 auto;
+      min-width: 0px;
+      margin-left: 250px;
+    }
+  }
+  //page view specific styles
+  #editor {
+    min-height: 100vh;
+    padding: 1em 1em !important;
+    >#editor-sidebar.visible {
+      min-height: 150px;
+      padding: 1em;
+      background: white;
+    }
+    >.pusher {
+    display: flex;
+      #browser-window-container {
+        flex-grow: 1;
+        margin-right: 15px;
+        /* The browser window */
+        >.container {
+          border: 3px solid #f1f1f1;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          >.row {
+            padding: 10px;
+            background: #f1f1f1;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            &:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            >.column {
+              float: left;
+              &.left {
+                width: 15%;
+                >.dot {
+                  margin-top: 4px;
+                  height: 12px;
+                  width: 12px;
+                  background-color: #bbb;
+                  border-radius: 50%;
+                  display: inline-block;
+                }
+              }
+              &.right {
+                width: 10%;
+                >div>.bar {
+                  width: 17px;
+                  height: 3px;
+                  background-color: #aaa;
+                  margin: 3px 0;
+                  display: block;
+                }
+              }
+              &.middle {
+                width: 75%;
+                >input[type=text] {
+                  width: 100%;
+                  border-radius: 3px;
+                  border: none;
+                  background-color: white;
+                  margin-top: -8px;
+                  height: 25px;
+                  color: #666;
+                  padding: 5px;
+                }
+              }
+            }
+          }
+          >.content {
+            max-height: 76vh;
+            overflow: auto;
+            .page-section-selected {
+              border: red thick solid;
+            }
+          }
+        }
+      }
+      >aside#editor-menu {
+        width: 200px;
+        >.ui.menu {
+          top: 12px;
+          right: 8px;
+          border-radius: .28571429rem !important;
+          height: auto;
+        }
+      }
+    }
+  }
+}

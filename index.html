@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+	Matthew Reynolds
+	891635
+	07-10-2024
+	CS 81 - 1242
+	Final Project
+	Webpage Builder App
+
+	This project utilizes third-party generators and frameworks to expedite and focus on the development of the core application feature of dynamically creating a webpage and providing users with the ability to export the static HTML to host the webpage on a simple web server.
+
+	View the README on the GitHub repository for more information - 
+
+-->
+<html lang="en">
+	<head>
+		<title>Final Project - Webpage Builder App | Matthew Reynolds</title>
+		<meta charset="utf-8">
+		<!-- add basic responsive support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- add custom favicon from https://favicon.io/emoji-favicons/grinning-cat -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<!-- add Semantic UI framework CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+		<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.css" />
+		<!-- custom CSS -->
+		<link rel="stylesheet" href="./css/webpage-builder-app.css">
+	</head>
+	<body>
+		<div class="app-view-container">
+			<div class="app-sidebar-menu-container">
+				<div class="ui vertical inverted menu app-sidebar-menu">
+					<div class="header item">
+						Final Project - Webpage Builder App
+					</div>
+					<a class="active item" href="/index.html" router-link>
+						Home
+					</a>
+					<a class="item" href="/index.html#editor" router-link>
+						Webpage Editor
+					</a>
+					<div class="header item" style="position: absolute; width: 100%; bottom: 0; left: 0;">
+						<p style="margin: 0.5rem 0 0 0"><small>Matthew Reynolds</small></p>
+						<p style="margin: 0.5rem 0 0 0"><small>CS 81 - 1242</small></p>
+						<p style="margin: 0.5rem 0 0 0"><small>Final Project</small></p>
+						<p style="margin: 0.5rem 0 0 0"><small>Webpage Builder App</small></p>
+					</div>
+				</div>
+				
+			</div>
+			<div id="app"></div>
+		</div>
+		<!-- scripts -->
+		<!-- add Semantic UI framework JS requirements -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+		<!-- rich text editor for editor text input fields -->
+		<!-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script> -->
+		<script type="importmap">
+			{
+				"imports": {
+					"ckeditor5": "https://cdn.ckeditor.com/ckeditor5/42.0.1/ckeditor5.js",
+					"ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.1/"
+				}
+			}
+		</script>
+		<!-- add custom application code -->
+		<script type="module" src="./js/webpage-builder-app.js"></script>
+	</body>
+</html>
