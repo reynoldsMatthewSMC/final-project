@@ -3,6 +3,9 @@
 ## Matthew Reynolds
 ### 891635
 
+## Please use a web server to load the files. VS Code Live Preview is recommended.
+I used script type="module" to be able to use CKEditor import statements which will cause a CORS error if a web server is not used to load the app files. <a href="https://stackoverflow.com/questions/67230845/how-to-use-javascript-type-module-locally-in-browser" target="_blank">Link to issue on StackOverflow</a>
+
 For my Final Project I built a JavaScript Single Page Application that provides users with a Dashboard interface to dynamically create a simple webpage that is able to be previewed and exported as static HTML to host with a simple web server.
 
 My goal is to use as much vanilla JavaScript (ES6) as possible, while some third-party requirements need jQuery to function correctly, my custom application code will include as little usage of non-vanilla JS as possible.
